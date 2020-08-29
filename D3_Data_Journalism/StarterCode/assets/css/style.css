@@ -11,7 +11,9 @@ html {
 
 body {
   /* Padding bottom by footer height */
+  padding-top: 50px;
   padding-bottom: 80px;
+  padding-right: 100px;
 }
 
 #footer {
