@@ -23,6 +23,11 @@
   cursor: pointer;
 }
 
+
+#scatter {
+  padding-bottom: 30px;
+}
+
 /* font size dependent on radius, see app.js */
 .stateText {
   font-family: sans-serif;

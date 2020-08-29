@@ -16,6 +16,10 @@ body {
   padding-right: 100px;
 }
 
+p {
+  padding-top: 20px;
+}
+
 #footer {
   position: absolute;
   bottom: 0;
@@ -25,6 +29,19 @@ body {
   padding-bottom: 40px;
   text-align: center;
   background-color: #f5f5f5;
+}
+
+.resources-title {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+H5 {
+  padding-bottom: 10px;
+}
+
+.xtra-space {
+  padding-bottom: 40px;
 }
 
 #footer p {

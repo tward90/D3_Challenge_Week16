@@ -49,12 +49,12 @@ function makeResponsive() {
       
         // set X-Scale to be linear
         const xLinearScale = d3.scaleLinear()
-        .domain([(d3.min(stateData, d=> d.healthcare)-3), d3.max(stateData, d => d.healthcare)])
-        .range([0, width]);
+        .domain([(d3.min(stateData, d=> d.healthcare-3)), (d3.max(stateData, d => d.healthcare)+2)])
+        .range([0, width-300]);
 
         //set Y-Scale to be linear
         const yLinearScale = d3.scaleLinear()
-        .domain([(d3.min(stateData, d=> d.age)-3), d3.max(stateData, d => d.age)])
+        .domain([(d3.min(stateData, d=> d.age)-1), d3.max(stateData, d => d.age)])
         .range([height, 0]);
 
         // create axes
@@ -105,10 +105,10 @@ function makeResponsive() {
           .attr("x", 0 - (height / 2))
           .attr("dy", "1em")
           .classed('axisText', true)
-          .text("Average Age");
+          .text("Average Age (yrs)");
 
         chartGroup.append("text")
-          .attr("transform", `translate(${(width / 2)}, ${height + margin.top -7 })`)
+          .attr("transform", `translate(${(width / 2)-200}, ${height + margin.top - 7 })`)
           .attr("class", "axisText")
           .classed('axisText', true)
           .text("Lacks Healthcare (%)");
